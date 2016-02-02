@@ -19,6 +19,7 @@
 		74B5391E1C606D6400AB9823 /* DiaryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B5391C1C606D6400AB9823 /* DiaryEntry.m */; };
 		74B539221C6072E900AB9823 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B539211C6072E900AB9823 /* MainStoryboard.storyboard */; };
 		74B539251C60750C00AB9823 /* NewEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B539241C60750C00AB9823 /* NewEntryViewController.m */; };
+		74B5392B1C607B1E00AB9823 /* EntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B5392A1C607B1E00AB9823 /* EntryListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		74B539211C6072E900AB9823 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		74B539231C60750C00AB9823 /* NewEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewEntryViewController.h; sourceTree = "<group>"; };
 		74B539241C60750C00AB9823 /* NewEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEntryViewController.m; sourceTree = "<group>"; };
+		74B539291C607B1E00AB9823 /* EntryListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryListTableViewController.h; sourceTree = "<group>"; };
+		74B5392A1C607B1E00AB9823 /* EntryListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,10 +121,7 @@
 				74B5391C1C606D6400AB9823 /* DiaryEntry.m */,
 				74B539191C606D6400AB9823 /* DiaryEntry+CoreDataProperties.h */,
 				74B5391A1C606D6400AB9823 /* DiaryEntry+CoreDataProperties.m */,
-				74B538E31C60662E00AB9823 /* AppDelegate.h */,
-				74B538E41C60662E00AB9823 /* AppDelegate.m */,
-				74B539231C60750C00AB9823 /* NewEntryViewController.h */,
-				74B539241C60750C00AB9823 /* NewEntryViewController.m */,
+				74B539271C607ABC00AB9823 /* ViewControllers */,
 				74B538EF1C60662E00AB9823 /* Assets.xcassets */,
 				74B539211C6072E900AB9823 /* MainStoryboard.storyboard */,
 				74B538F11C60662F00AB9823 /* LaunchScreen.storyboard */,
@@ -136,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				74B538E11C60662E00AB9823 /* main.m */,
+				74B538E31C60662E00AB9823 /* AppDelegate.h */,
+				74B538E41C60662E00AB9823 /* AppDelegate.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -156,6 +158,17 @@
 				74B5390A1C60662F00AB9823 /* Info.plist */,
 			);
 			path = DiaryUITests;
+			sourceTree = "<group>";
+		};
+		74B539271C607ABC00AB9823 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				74B539231C60750C00AB9823 /* NewEntryViewController.h */,
+				74B539241C60750C00AB9823 /* NewEntryViewController.m */,
+				74B539291C607B1E00AB9823 /* EntryListTableViewController.h */,
+				74B5392A1C607B1E00AB9823 /* EntryListTableViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +307,7 @@
 				74B5391E1C606D6400AB9823 /* DiaryEntry.m in Sources */,
 				74B538EE1C60662E00AB9823 /* Diary.xcdatamodeld in Sources */,
 				74B5391D1C606D6400AB9823 /* DiaryEntry+CoreDataProperties.m in Sources */,
+				74B5392B1C607B1E00AB9823 /* EntryListTableViewController.m in Sources */,
 				74B539181C6069AD00AB9823 /* CoreDataStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

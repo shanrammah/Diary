@@ -23,6 +23,8 @@ enum DiaryEntryMood{   DiaryEntryMoodGood = 0, DiaryEntryMoodAverage = 1, DiaryE
 @property (nonatomic) int16_t mood;
 @property (nullable, nonatomic, retain) NSString *location;
 
+@property (nonatomic, readonly) NSString *sectionName; 
+
 @end
 
 NS_ASSUME_NONNULL_END
