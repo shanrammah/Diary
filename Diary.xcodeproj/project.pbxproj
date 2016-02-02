@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		74B538E21C60662E00AB9823 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B538E11C60662E00AB9823 /* main.m */; };
 		74B538E51C60662E00AB9823 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B538E41C60662E00AB9823 /* AppDelegate.m */; };
-		74B538E81C60662E00AB9823 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B538E71C60662E00AB9823 /* ViewController.m */; };
-		74B538EB1C60662E00AB9823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B538E91C60662E00AB9823 /* Main.storyboard */; };
 		74B538EE1C60662E00AB9823 /* Diary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74B538EC1C60662E00AB9823 /* Diary.xcdatamodeld */; };
 		74B538F01C60662E00AB9823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B538EF1C60662E00AB9823 /* Assets.xcassets */; };
 		74B538F31C60662F00AB9823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B538F11C60662F00AB9823 /* LaunchScreen.storyboard */; };
@@ -40,9 +38,6 @@
 		74B538E11C60662E00AB9823 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74B538E31C60662E00AB9823 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74B538E41C60662E00AB9823 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		74B538E61C60662E00AB9823 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		74B538E71C60662E00AB9823 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		74B538EA1C60662E00AB9823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74B538ED1C60662E00AB9823 /* Diary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Diary.xcdatamodel; sourceTree = "<group>"; };
 		74B538EF1C60662E00AB9823 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74B538F21C60662F00AB9823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,9 +100,6 @@
 			children = (
 				74B538E31C60662E00AB9823 /* AppDelegate.h */,
 				74B538E41C60662E00AB9823 /* AppDelegate.m */,
-				74B538E61C60662E00AB9823 /* ViewController.h */,
-				74B538E71C60662E00AB9823 /* ViewController.m */,
-				74B538E91C60662E00AB9823 /* Main.storyboard */,
 				74B538EF1C60662E00AB9823 /* Assets.xcassets */,
 				74B538F11C60662F00AB9823 /* LaunchScreen.storyboard */,
 				74B538F41C60662F00AB9823 /* Info.plist */,
@@ -248,7 +240,6 @@
 			files = (
 				74B538F31C60662F00AB9823 /* LaunchScreen.storyboard in Resources */,
 				74B538F01C60662E00AB9823 /* Assets.xcassets in Resources */,
-				74B538EB1C60662E00AB9823 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B538E81C60662E00AB9823 /* ViewController.m in Sources */,
 				74B538E51C60662E00AB9823 /* AppDelegate.m in Sources */,
 				74B538E21C60662E00AB9823 /* main.m in Sources */,
 				74B538EE1C60662E00AB9823 /* Diary.xcdatamodeld in Sources */,
@@ -312,14 +302,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		74B538E91C60662E00AB9823 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74B538EA1C60662E00AB9823 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		74B538F11C60662F00AB9823 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
