@@ -14,6 +14,9 @@
 		74B538F31C60662F00AB9823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B538F11C60662F00AB9823 /* LaunchScreen.storyboard */; };
 		74B538FE1C60662F00AB9823 /* DiaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B538FD1C60662F00AB9823 /* DiaryTests.m */; };
 		74B539091C60662F00AB9823 /* DiaryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B539081C60662F00AB9823 /* DiaryUITests.m */; };
+		74B539181C6069AD00AB9823 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B539171C6069AD00AB9823 /* CoreDataStack.m */; };
+		74B5391D1C606D6400AB9823 /* DiaryEntry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B5391A1C606D6400AB9823 /* DiaryEntry+CoreDataProperties.m */; };
+		74B5391E1C606D6400AB9823 /* DiaryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B5391C1C606D6400AB9823 /* DiaryEntry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		74B539041C60662F00AB9823 /* DiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B539081C60662F00AB9823 /* DiaryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaryUITests.m; sourceTree = "<group>"; };
 		74B5390A1C60662F00AB9823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74B539161C6069AD00AB9823 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		74B539171C6069AD00AB9823 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		74B539191C606D6400AB9823 /* DiaryEntry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DiaryEntry+CoreDataProperties.h"; sourceTree = SOURCE_ROOT; };
+		74B5391A1C606D6400AB9823 /* DiaryEntry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DiaryEntry+CoreDataProperties.m"; sourceTree = SOURCE_ROOT; };
+		74B5391B1C606D6400AB9823 /* DiaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryEntry.h; sourceTree = SOURCE_ROOT; };
+		74B5391C1C606D6400AB9823 /* DiaryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryEntry.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +107,12 @@
 		74B538DF1C60662E00AB9823 /* Diary */ = {
 			isa = PBXGroup;
 			children = (
+				74B539161C6069AD00AB9823 /* CoreDataStack.h */,
+				74B539171C6069AD00AB9823 /* CoreDataStack.m */,
+				74B5391B1C606D6400AB9823 /* DiaryEntry.h */,
+				74B5391C1C606D6400AB9823 /* DiaryEntry.m */,
+				74B539191C606D6400AB9823 /* DiaryEntry+CoreDataProperties.h */,
+				74B5391A1C606D6400AB9823 /* DiaryEntry+CoreDataProperties.m */,
 				74B538E31C60662E00AB9823 /* AppDelegate.h */,
 				74B538E41C60662E00AB9823 /* AppDelegate.m */,
 				74B538EF1C60662E00AB9823 /* Assets.xcassets */,
@@ -266,7 +281,10 @@
 			files = (
 				74B538E51C60662E00AB9823 /* AppDelegate.m in Sources */,
 				74B538E21C60662E00AB9823 /* main.m in Sources */,
+				74B5391E1C606D6400AB9823 /* DiaryEntry.m in Sources */,
 				74B538EE1C60662E00AB9823 /* Diary.xcdatamodeld in Sources */,
+				74B5391D1C606D6400AB9823 /* DiaryEntry+CoreDataProperties.m in Sources */,
+				74B539181C6069AD00AB9823 /* CoreDataStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
