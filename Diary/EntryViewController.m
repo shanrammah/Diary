@@ -6,22 +6,26 @@
 //  Copyright © 2016 Shan Rammah. All rights reserved.
 //
 
-#import "NewEntryViewController.h"
+#import "EntryViewController.h"
 #import "DiaryEntry.h"
 #import "CoreDataStack.h"
 
-@interface NewEntryViewController ()
+@interface EntryViewController ()
 
 @property (strong, nonatomic) IBOutlet UITextField *textField;
 
 
 @end
 
-@implementation NewEntryViewController
+@implementation EntryViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    if (self.entry !=nil) {
+        self.textField.text = self.entry.body;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,7 +57,11 @@
 
 - (IBAction)doneWasPressed:(id)sender {
     
-    [self insertDiaryEntry];
+    if (self.entry != nil) {
+        [self updateDiaryEntry];
+    } else {
+        [self insertDiaryEntry];
+    }
     [self dismissSelf];
 }
 
@@ -67,6 +75,14 @@
     [self.presentingViewController
      dismissViewControllerAnimated:YES completion:nil];
     
+}
+
+- (void)updateDiaryEntry
+{
+    self.entry.body = self.textField.text;
+    
+    CoreDataStack *coreDataStack = [CoreDataStack defaultStack];
+    [coreDataStack saveContext];
 }
 
 
