@@ -13,12 +13,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="enI-ua-YER">
-                                <rect key="frame" x="20" y="85" width="374" height="30"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="c1T-EQ-qja">
+                                <rect key="frame" x="20" y="142" width="374" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ake-Dp-P9w">
+                                <rect key="frame" x="30" y="81" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="icn_noimage"/>
+                                <connections>
+                                    <action selector="imageButtonWasPressed:" destination="LWW-wr-dma" eventType="touchUpInside" id="HpK-Wj-nhj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kei-wI-KIt">
+                                <rect key="frame" x="116" y="94" width="214" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -36,10 +52,58 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="textField" destination="enI-ua-YER" id="Kd9-z9-UyO"/>
+                        <outlet property="accessoryView" destination="KiA-AZ-ddL" id="YLK-Kd-8gR"/>
+                        <outlet property="averageButton" destination="vzn-ih-UIw" id="4EI-Pc-zif"/>
+                        <outlet property="badButton" destination="glv-NT-IIZ" id="BCc-W4-jvU"/>
+                        <outlet property="dateLabel" destination="Kei-wI-KIt" id="c1Z-U1-3vo"/>
+                        <outlet property="goodButton" destination="pOk-9f-Wkl" id="TRH-qs-kfP"/>
+                        <outlet property="imageButton" destination="Ake-Dp-P9w" id="IKc-No-Ex4"/>
+                        <outlet property="textView" destination="c1T-EQ-qja" id="5zj-1V-Exd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QVV-c6-tmX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="KiA-AZ-ddL">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="glv-NT-IIZ">
+                            <rect key="frame" x="0.0" y="0.0" width="139" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.8784313725490196" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                            <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Bad" image="icn_bad_lrg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="badWasPressed:" destination="LWW-wr-dma" eventType="touchUpInside" id="zgz-Up-yfb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vzn-ih-UIw">
+                            <rect key="frame" x="138" y="0.0" width="138" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.396078431372549" green="0.396078431372549" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                            <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Average" image="icn_average_lrg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="averageWasPressed:" destination="LWW-wr-dma" eventType="touchUpInside" id="Dy8-tI-bbE"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pOk-9f-Wkl">
+                            <rect key="frame" x="276" y="0.0" width="138" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.49411764705882355" green="0.60392156862745094" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                            <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Good" image="icn_good_lrg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="goodWasPressed:" destination="LWW-wr-dma" eventType="touchUpInside" id="hUI-4L-y0b"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </view>
             </objects>
             <point key="canvasLocation" x="434" y="-532"/>
         </scene>
@@ -97,7 +161,7 @@
                                             <color key="textColor" red="0.23529411764705882" green="0.30588235294117649" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="xwq-4o-1fJ">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="xwq-4o-1fJ">
                                             <rect key="frame" x="18" y="22" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
@@ -155,6 +219,12 @@
             <point key="canvasLocation" x="-215.46666666666667" y="-531.08000000000004"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icn_average_lrg" width="15" height="15"/>
+        <image name="icn_bad_lrg" width="15" height="15"/>
+        <image name="icn_good_lrg" width="15" height="15"/>
+        <image name="icn_noimage" width="47" height="47"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="YAM-Kn-VnT"/>
     </inferredMetricsTieBreakers>

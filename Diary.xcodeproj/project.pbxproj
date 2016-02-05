@@ -22,6 +22,8 @@
 		74B5392B1C607B1E00AB9823 /* EntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B5392A1C607B1E00AB9823 /* EntryListTableViewController.m */; };
 		74B5392E1C63170A00AB9823 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B5392D1C63170A00AB9823 /* NavigationViewController.m */; };
 		74B539311C631AEA00AB9823 /* EntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B539301C631AEA00AB9823 /* EntryTableViewCell.m */; };
+		74B539331C6484AA00AB9823 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B539321C6484AA00AB9823 /* QuartzCore.framework */; };
+		74B539351C64879300AB9823 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B539341C64879300AB9823 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		74B5392D1C63170A00AB9823 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		74B5392F1C631AEA00AB9823 /* EntryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryTableViewCell.h; sourceTree = "<group>"; };
 		74B539301C631AEA00AB9823 /* EntryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryTableViewCell.m; sourceTree = "<group>"; };
+		74B539321C6484AA00AB9823 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		74B539341C64879300AB9823 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B539351C64879300AB9823 /* CoreLocation.framework in Frameworks */,
+				74B539331C6484AA00AB9823 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,12 +127,8 @@
 		74B538DF1C60662E00AB9823 /* Diary */ = {
 			isa = PBXGroup;
 			children = (
-				74B539161C6069AD00AB9823 /* CoreDataStack.h */,
-				74B539171C6069AD00AB9823 /* CoreDataStack.m */,
-				74B5391B1C606D6400AB9823 /* DiaryEntry.h */,
-				74B5391C1C606D6400AB9823 /* DiaryEntry.m */,
-				74B539191C606D6400AB9823 /* DiaryEntry+CoreDataProperties.h */,
-				74B5391A1C606D6400AB9823 /* DiaryEntry+CoreDataProperties.m */,
+				74B539371C64884D00AB9823 /* FrameWorks */,
+				74B539361C6487A200AB9823 /* CoreData */,
 				74B539271C607ABC00AB9823 /* ViewControllers */,
 				74B538EF1C60662E00AB9823 /* Assets.xcassets */,
 				74B539211C6072E900AB9823 /* MainStoryboard.storyboard */,
@@ -179,6 +181,28 @@
 				74B539301C631AEA00AB9823 /* EntryTableViewCell.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		74B539361C6487A200AB9823 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				74B539161C6069AD00AB9823 /* CoreDataStack.h */,
+				74B539171C6069AD00AB9823 /* CoreDataStack.m */,
+				74B5391B1C606D6400AB9823 /* DiaryEntry.h */,
+				74B5391C1C606D6400AB9823 /* DiaryEntry.m */,
+				74B539191C606D6400AB9823 /* DiaryEntry+CoreDataProperties.h */,
+				74B5391A1C606D6400AB9823 /* DiaryEntry+CoreDataProperties.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		74B539371C64884D00AB9823 /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				74B539341C64879300AB9823 /* CoreLocation.framework */,
+				74B539321C6484AA00AB9823 /* QuartzCore.framework */,
+			);
+			name = FrameWorks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
