@@ -131,7 +131,7 @@
 - (void)promptForSource {
     
     
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Image Source" delegate:self cancelButtonTitle:@"Cance" destructiveButtonTitle:nil otherButtonTitles:@"Camera", @"Photo RolL", nil];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Image Source" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Photo Library", @"Camera", nil];
     
     [actionSheet showInView:self.view];
     
@@ -160,12 +160,19 @@
 {
     
     if (buttonIndex != actionSheet.cancelButtonIndex) {
+        
         if(buttonIndex != actionSheet.firstOtherButtonIndex) {
             [self promptForCamera];
         } else {
             [self promptForPhotoRoll];
         }
+    } else {
+     
+        [self.textView becomeFirstResponder];
+        
     }
+    
+    
 }
 
 - (void)promptForCamera {
@@ -255,6 +262,9 @@
 
 - (IBAction)imageButtonWasPressed:(id)sender
 {
+    [self.textView resignFirstResponder];
+    
+    
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         [self promptForSource];
     } else {
